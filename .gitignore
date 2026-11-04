@@ -1,0 +1,22 @@
+# Credenciais e variáveis locais
+.env
+.env.*
+!.env.example
+!.env.exemplo
+
+# Dados da API: NUNCA publicar brutos ou tratados
+dados/
+
+# Ambiente de desenvolvimento e arquivos temporários
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+*.tmp
+*.log
+.DS_Store
+
+# Documento privado de planejamento do projeto
+projeto-filas-orlando.md

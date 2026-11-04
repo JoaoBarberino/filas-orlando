@@ -1,0 +1,111 @@
+parque,atracao,fecha_com_raio,certeza,fonte,comportamento_nas_trovoadas
+animal-kingdom,Avatar Flight of Passage,não,média (parou numa trovoada; provável acaso),IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: parou 38 min
+animal-kingdom,Bluey's Wild World at Conservation Station,sim,média,"dados (parou os mesmos 43 min que o Wildlife Express, único acesso)",01/11: sem dado; 10/10: parou 43 min; 11/10: sem dado
+animal-kingdom,Expedition Everest - Legend of the Forbidden Mountain,sim,alta,DVC Shop (2023),01/11: parou 42 min; 10/10: parou 28 min; 11/10: parou 20 min
+animal-kingdom,Gorilla Falls Exploration Trail,sim,alta,IA: trilha ao ar livre; conferir,01/11: parou 12 min; 10/10: parou 15 min; 11/10: parou 12 min
+animal-kingdom,Kali River Rapids,sim,alta,DVC Shop (2023),01/11: parou 45 min; 10/10: parou 45 min; 11/10: parou 31 min
+animal-kingdom,Kilimanjaro Safaris,não,alta,dados (seguiu funcionando nas 3 trovoadas em que Everest e Kali pararam); DVC Shop (2023) diz que fecha,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+animal-kingdom,Maharajah Jungle Trek,sim,alta,IA: trilha ao ar livre; conferir,01/11: parou 9 min; 10/10: parou 15 min; 11/10: parou 11 min
+animal-kingdom,Na'vi River Journey,não,alta,IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+animal-kingdom,Wildlife Express Train,sim,média (dados divergem em parte),DVC Shop (2023),01/11: sem dado; 10/10: parou 43 min; 11/10: funcionou
+animal-kingdom,Zootopia: Better Zoogether!,não,alta,IA: teatro coberto,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+epcot,Beauty and the Beast Sing-Along,não,alta,IA: teatro coberto,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+epcot,Canada Far and Wide in Circle-Vision 360,não,alta,IA: teatro coberto,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+epcot,Frozen Ever After,não,média (parou numa trovoada; provável acaso),IA: atração coberta,01/11: funcionou; 10/10: parou 90 min; 11/10: funcionou
+epcot,Gran Fiesta Tour Starring The Three Caballeros,não,alta,IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+epcot,Guardians of the Galaxy: Cosmic Rewind,não,alta,IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+epcot,Impressions de France,não,média (só fonte),IA: teatro coberto,01/11: sem dado; 10/10: sem dado; 11/10: sem dado
+epcot,Journey Into Imagination With Figment,não,média (parou numa trovoada; provável acaso),IA: atração coberta,01/11: parou 55 min; 10/10: funcionou; 11/10: funcionou
+epcot,Living with the Land,não,alta,IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+epcot,Mission: SPACE,não,alta,IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+epcot,Reflections of China,não,alta,IA: teatro coberto,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+epcot,Remy's Ratatouille Adventure,não,média (parou numa trovoada; provável acaso),IA: atração coberta,01/11: funcionou; 10/10: parou 57 min; 11/10: funcionou
+epcot,Soarin' Across America,não,alta,IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+epcot,Spaceship Earth,não,média (parou numa trovoada; provável acaso),IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: parou 7 min
+epcot,Test Track,sim,alta,DVC Shop (2023),01/11: parou 90 min; 10/10: parou 121 min; 11/10: parou 120 min
+epcot,The Seas with Nemo & Friends,não,alta,IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+epcot,Turtle Talk With Crush,não,alta,IA: teatro coberto,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+epic-universe,Bowser Jr. Challenge,não,alta,IA: atração coberta,10/10: funcionou
+epic-universe,Constellation Carousel,não,média,"dados (seguiu funcionando em 10/10, quando as 7 externas pararam); fora da lista da Disney Dining",10/10: funcionou
+epic-universe,Curse of the Werewolf,sim,alta,Disney Dining (jul/2026),10/10: parou 125 min
+epic-universe,Dragon Racer's Rally,sim,alta,Disney Dining (jul/2026),10/10: parou 128 min
+epic-universe,Fyre Drill,sim,alta,Disney Dining (jul/2026),10/10: parou 134 min
+epic-universe,Harry Potter and the Battle at the Ministry™,não,alta,Disney Dining (jul/2026),10/10: funcionou
+epic-universe,Hiccup's Wing Gliders,sim,alta,Disney Dining (jul/2026),10/10: parou 138 min
+epic-universe,Mario Kart™: Bowser's Challenge,não,alta,Disney Dining (jul/2026),10/10: funcionou
+epic-universe,Mine-Cart Madness™,sim,alta,Disney Dining (jul/2026),10/10: parou 150 min
+epic-universe,Monsters Unchained: The Frankenstein Experiment,não,alta,Disney Dining (jul/2026),10/10: funcionou
+epic-universe,Stardust Racers,sim,alta,Disney Dining (jul/2026),10/10: parou 122 min
+epic-universe,Yoshi's Adventure™,sim,alta,Disney Dining (jul/2026),10/10: parou 123 min
+hollywood-studios,Alien Swirling Saucers,não,alta,dados (seguiu funcionando nas 3 trovoadas em que Slinky Dog parou); DVC Shop (2023) diz que fecha,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+hollywood-studios,Mickey & Minnie's Runaway Railway,não,média (parou numa trovoada; provável acaso),IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: parou 50 min
+hollywood-studios,Millennium Falcon: Smugglers Run,não,alta,IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+hollywood-studios,Rock ’n’ Roller Coaster Starring The Muppets,não,alta,IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+hollywood-studios,Slinky Dog Dash,sim,alta,DVC Shop (2023),01/11: parou 29 min; 10/10: parou 37 min; 11/10: parou 23 min
+hollywood-studios,Star Tours – The Adventures Continue,não,alta,IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+hollywood-studios,Star Wars: Rise of the Resistance,não,alta,IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+hollywood-studios,The Twilight Zone™ Tower of Terror,não,média (parou numa trovoada; provável acaso),IA: atração coberta; conferir,01/11: funcionou; 10/10: funcionou; 11/10: parou 38 min
+hollywood-studios,Toy Story Mania!,não,alta,IA: atração coberta,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+hollywood-studios,Vacation Fun - An Original Animated Short with Mickey & Minnie,não,alta,IA: teatro coberto,01/11: funcionou; 10/10: funcionou; 11/10: funcionou
+islands-of-adventure,Caro-Seuss-el™,sim,média (dados divergem em parte),AllEars: fecha com mau tempo; dados (parou 81 min em 10/10),01/11: funcionou; 10/10: parou 81 min
+islands-of-adventure,Doctor Doom's Fearfall®,sim,alta,IA: ao ar livre,01/11: parou 62 min; 10/10: parou 156 min
+islands-of-adventure,Dudley Do-Right's Ripsaw Falls®,sim,alta,IA: ao ar livre,01/11: parou 65 min; 10/10: parou 163 min
+islands-of-adventure,Flight of the Hippogriff™,sim,alta,IA: ao ar livre,01/11: parou 113 min; 10/10: parou 137 min
+islands-of-adventure,Hagrid's Magical Creatures Motorbike Adventure™,sim,alta,IA: ao ar livre,01/11: parou 56 min; 10/10: parou 165 min
+islands-of-adventure,Harry Potter and the Forbidden Journey™,não,média (dados divergem em parte),"AllEars: coberta, costuma seguir aberta (nos dados, paradas curtas nas 2 trovoadas fortes)",01/11: parou 21 min; 10/10: parou 26 min
+islands-of-adventure,Hogwarts Express™ - Hogsmeade™ Station,não,média,dados (seguiu funcionando em 10/10 e 11/10),01/11: sem dado; 10/10: funcionou
+islands-of-adventure,Jurassic World VelociCoaster,sim,alta,IA: ao ar livre,01/11: parou 77 min; 10/10: parou 156 min
+islands-of-adventure,"One Fish, Two Fish, Red Fish, Blue Fish™",sim,alta,IA: ao ar livre,01/11: parou 71 min; 10/10: parou 133 min
+islands-of-adventure,Popeye & Bluto's Bilge-Rat Barges®,sim,alta,IA: ao ar livre,01/11: parou 62 min; 10/10: parou 165 min
+islands-of-adventure,Pteranodon Flyers,sim,alta,IA: ao ar livre,01/11: parou 131 min; 10/10: parou 144 min
+islands-of-adventure,Skull Island: Reign of Kong,não,média (dados divergem em parte),AllEars: tem modo de mau tempo que pula o trecho externo,01/11: parou 68 min; 10/10: parou 19 min
+islands-of-adventure,Storm Force Accelatron®,não,alta,"AllEars: coberta, costuma seguir aberta; dados confirmam",01/11: funcionou; 10/10: funcionou
+islands-of-adventure,The Amazing Adventures of Spider-Man®,não,alta,"AllEars: coberta, costuma seguir aberta com mau tempo",01/11: funcionou; 10/10: funcionou
+islands-of-adventure,The Cat in The Hat™,não,média (dados divergem em parte),"AllEars: coberta, costuma seguir aberta com mau tempo",01/11: funcionou; 10/10: parou 5 min
+islands-of-adventure,The High in the Sky Seuss Trolley Train Ride!™,sim,alta,IA: ao ar livre,01/11: parou 71 min; 10/10: parou 157 min
+islands-of-adventure,The Incredible Hulk Coaster®,sim,alta,IA: ao ar livre,01/11: parou 59 min; 10/10: parou 143 min
+magic-kingdom,"""it's a small world""",não,alta,IA: atração coberta,10/10: funcionou
+magic-kingdom,Astro Orbiter,sim,alta,DVC Shop (2023),10/10: parou 44 min
+magic-kingdom,Big Thunder Mountain Railroad,sim,alta,DVC Shop (2023),10/10: parou 37 min
+magic-kingdom,Buzz Lightyear’s Space Ranger Spin,não,alta,IA: atração coberta,10/10: funcionou
+magic-kingdom,Country Bear Musical Jamboree,não,alta,IA: teatro coberto,10/10: funcionou
+magic-kingdom,Dumbo the Flying Elephant,sim,alta,DVC Shop (2023),10/10: parou 31 min
+magic-kingdom,Enchanted Tales with Belle,não,alta,IA: atração coberta,10/10: funcionou
+magic-kingdom,Haunted Mansion,não,alta,IA: atração coberta,10/10: funcionou
+magic-kingdom,Jingle Cruise,sim,média (só fonte),mesma atração do Jungle Cruise (versão de Natal),sem dado
+magic-kingdom,Jungle Cruise,sim,alta,DVC Shop (2023) e AllEars (2025); dados (parou em 10/10),10/10: parou 48 min
+magic-kingdom,Mad Tea Party,não,alta,"BlogMickey (2023): aberta mas abrigada, como o TRON",10/10: funcionou
+magic-kingdom,Mickey's PhilharMagic,não,alta,IA: teatro coberto,10/10: funcionou
+magic-kingdom,"Monsters, Inc. Laugh Floor",não,alta,IA: teatro coberto,10/10: funcionou
+magic-kingdom,Peter Pan's Flight,não,alta,IA: atração coberta,10/10: funcionou
+magic-kingdom,Pirates of the Caribbean,não,alta,IA: atração coberta,10/10: funcionou
+magic-kingdom,Prince Charming Regal Carrousel,não,alta,dados (seguiu funcionando em 10/10; carrossel coberto); DVC Shop (2023) diz que fecha,10/10: funcionou
+magic-kingdom,Seven Dwarfs Mine Train,sim,alta,DVC Shop (2023),10/10: parou 31 min
+magic-kingdom,Space Mountain,não,alta,IA: atração coberta,10/10: funcionou
+magic-kingdom,Swiss Family Treehouse,sim,alta,DVC Shop (2023),10/10: parou 34 min
+magic-kingdom,TRON Lightcycle / Run,não,alta,BlogMickey (2023) e AllEars (2025): cobertura no trecho externo; segue com raio,10/10: funcionou
+magic-kingdom,The Barnstormer,sim,alta,DVC Shop (2023),10/10: parou 32 min
+magic-kingdom,The Hall of Presidents,não,alta,IA: teatro coberto,10/10: funcionou
+magic-kingdom,The Magic Carpets of Aladdin,sim,alta,DVC Shop (2023),10/10: parou 34 min
+magic-kingdom,The Many Adventures of Winnie the Pooh,não,alta,IA: atração coberta,10/10: funcionou
+magic-kingdom,Tiana's Bayou Adventure,sim,alta,DVC Shop (2023; Splash Mountain),10/10: parou 36 min
+magic-kingdom,Tomorrowland Speedway,sim,alta,AllEars (2025): fechou durante tempestade; dados (parou em 10/10),10/10: parou 34 min
+magic-kingdom,Tomorrowland Transit Authority PeopleMover,não,média,dados (seguiu funcionando em 10/10); DVC Shop (2023) diz que fecha,10/10: funcionou
+magic-kingdom,Under the Sea - Journey of The Little Mermaid,não,alta,IA: atração coberta,10/10: funcionou
+magic-kingdom,Walt Disney World Railroad - Fantasyland,sim,média (só fonte),DVC Shop (2023),10/10: sem dado
+magic-kingdom,"Walt Disney World Railroad - Main Street, U.S.A.",sim,média (só fonte),DVC Shop (2023),10/10: sem dado
+magic-kingdom,Walt Disney's Enchanted Tiki Room,não,alta,IA: teatro coberto,10/10: funcionou
+universal-studios-florida,Despicable Me Minion Mayhem™,não,alta,IA: atração coberta,01/11: sem dado; 10/10: funcionou
+universal-studios-florida,E.T. Adventure,não,alta,IA: atração coberta,01/11: sem dado; 10/10: funcionou
+universal-studios-florida,Harry Potter and the Escape from Gringotts™,não,alta,"AllEars: coberta, costuma seguir aberta com mau tempo",01/11: funcionou; 10/10: funcionou
+universal-studios-florida,Hogwarts Express™ - King's Cross Station,não,média,dados (seguiu funcionando em 10/10 e 11/10),01/11: sem dado; 10/10: funcionou
+universal-studios-florida,Hogwarts™ Express - First Train,não,baixa (sem dado nas trovoadas),igual à estação King's Cross (sem dado nas trovoadas),01/11: sem dado; 10/10: sem dado
+universal-studios-florida,Hogwarts™ Express - Last Train,não,baixa (sem dado nas trovoadas),igual à estação King's Cross (sem dado nas trovoadas),01/11: sem dado; 10/10: sem dado
+universal-studios-florida,Illumination's Villain-Con Minion Blast,não,média (dados divergem em parte),IA: atração coberta,01/11: sem dado; 10/10: parou 16 min
+universal-studios-florida,Kang & Kodos' Twirl 'n' Hurl,sim,média,IA: ao ar livre,01/11: sem dado; 10/10: parou 134 min
+universal-studios-florida,MEN IN BLACK™ Alien Attack!,não,média (dados divergem em parte),"AllEars: coberta, costuma seguir aberta com mau tempo",01/11: parou 35 min; 10/10: parou 8 min
+universal-studios-florida,Race Through New York Starring Jimmy Fallon,não,alta,IA: atração coberta,01/11: sem dado; 10/10: funcionou
+universal-studios-florida,Revenge of the Mummy,não,alta,"AllEars: coberta, costuma seguir aberta com mau tempo",01/11: funcionou; 10/10: funcionou
+universal-studios-florida,TRANSFORMERS™: The Ride-3D,não,alta,IA: atração coberta,01/11: funcionou; 10/10: funcionou
+universal-studios-florida,The Simpsons Ride™,não,alta,"AllEars: coberta, costuma seguir aberta com mau tempo",01/11: sem dado; 10/10: funcionou
+universal-studios-florida,Trolls Trollercoaster,sim,alta,IA: ao ar livre,01/11: parou 147 min; 10/10: parou 152 min
