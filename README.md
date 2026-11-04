@@ -2,7 +2,7 @@
 
 Projeto independente de análise de dados em **Python** que acompanha o funcionamento das atrações de sete parques temáticos de Orlando, sob a perspectiva da **Engenharia de Produção**.
 
-O objetivo é investigar como demanda, interrupções operacionais, políticas de preços e previsões se relacionam com a experiência de espera — e quais aprendizados podem ser transferidos para outras operações com filas.
+O objetivo é investigar como demanda, interrupções operacionais, políticas de preços e previsões se relacionam com a experiência de espera, e quais aprendizados podem ser transferidos para outras operações com filas.
 
 ## Parques analisados
 
