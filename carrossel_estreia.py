@@ -1,5 +1,5 @@
 """
-Projeto "Filas em Orlando": carrossel do post de estreia (quinta, 12/11/2026).
+Projeto "Filas em Orlando": carrossel do post de estreia (quinta, 05/11/2026).
 
 Identidade da série de quinta: "folha de cálculo" (papel de engenharia
 quadriculado, grafite, caneta azul, carimbo de desenho técnico no rodapé).
@@ -14,7 +14,7 @@ Medida (revisada em 04/11): paradas de 10 min ou mais por 10 horas de operação
 atração (operação = minutos funcionando + parada, no horário normal), SEM as paradas
 por raio. 1º lugar = mais paradas. Teatros e cinemas ficam fora (limpar_paradas.py).
 Por que o EPCOT: é o parque cuja posição muda e que passou nos testes do robustez.py
-(3º em todos os cortes de porte, nas duas metades do mês e em 88% das reamostragens
+(3º em todos os cortes de porte, nas duas metades do mês e em 84% das reamostragens
 por dia). Quem é o 1º (Islands ou Epic) NÃO passou nos testes: por isso não vai em título.
 
 Como rodar (mesma pasta; depois do limpar_paradas.py e do checar_clima.py):
@@ -45,7 +45,10 @@ PARQUE_FOCO = "epcot"      # o parque contado na capa e na imagem 3
 
 TITULO_1 = "Qual parque de Orlando\ntem mais paradas por\natração? Depende da régua."
 TITULO_2 = "Comparando só atrações\ngrandes, o ranking muda: o\n{parque} sobe do {de}º para o {para}º lugar."
-TITULO_3 = "{quanto} das atrações do {parque}\nsão galerias e exposições. Elas\nquase nunca param e puxam\na média para baixo."
+TITULO_3 = ("No {parque}, {quanto} atrações\n"
+            "quase não têm fila. Elas\n"
+            "raramente registram paradas\n"
+            "e puxam a média para baixo.")
 
 PERIODO = "de 5/out a 3/nov de 2026"
 SUBTITULO_1 = ("Posição do {parque} entre os 7 parques da Disney\n"
@@ -270,10 +273,7 @@ def ranking(f, tab):
 def por_que(f, tab):
     t = tab[PARQUE_FOCO]
     total = sum(t["qtd"].values())
-    fracao = t["qtd"]["sem_fila"] / total
-    quanto = "Metade" if 0.45 <= fracao <= 0.58 else f"{t['qtd']['sem_fila']} das {total}"
-    if quanto != "Metade":
-        print(f"AVISO: {t['qtd']['sem_fila']} de {total} atrações sem fila ({fracao:.0%}); confira o título 3.")
+    quanto = f"{t['qtd']['sem_fila']} de {total}"
     titulo = TITULO_3.format(quanto=quanto, parque=NOMES[PARQUE_FOCO])
     fig, ax = folha(f, titulo, SUBTITULO_3.format(parque=NOMES[PARQUE_FOCO]), "3 de 3",
                     y_subtitulo=405, tamanho_titulo=37)
