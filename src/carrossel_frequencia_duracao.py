@@ -18,9 +18,9 @@ Regras (as mesmas da estreia, conferidas pela auditoria de 11/11/2026):
   - base congelada: DATA_INICIO a DATA_FIM (a mesma da estreia);
   - "duração típica" = mediana das paradas de 10 min ou mais (duracao_min).
 
-Como rodar (mesma pasta; depois do limpar_paradas.py e do checar_clima.py;
+Como rodar (a partir da raiz do projeto; depois do limpar_paradas.py e do checar_clima.py;
 NÃO rode o limpar_paradas.py de novo antes):
-    python carrossel_frequencia_duracao.py
+    python src/carrossel_frequencia_duracao.py
 
 Precisa, na pasta "fontes_quinta" (a mesma das fontes da estreia), de (gratuitas, licença OFL):
     Rubik-ExtraBold.ttf, Rubik-Medium.ttf, DMSans-Regular.ttf, DMSans-Bold.ttf
@@ -118,7 +118,7 @@ CURTOS = {
     "The Amazing Adventures of Spider-Man": "Spider-Man",
 }
 
-PASTA = Path(__file__).parent
+PASTA = Path(__file__).resolve().parent.parent   # raiz do projeto (este script fica em src/)
 PASTA_TRATADOS = PASTA / "dados" / "tratados"
 PASTA_FONTES = PASTA / "fontes_quinta"
 PASTA_SAIDA = PASTA / "posts" / "02-frequencia-duracao"   # imagens e PDF publicados

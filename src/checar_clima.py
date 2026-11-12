@@ -26,10 +26,10 @@ Limites (dizer nos posts): a estação fica a 15-27 km dos parques, então o rai
 registrado pode estar longe do parque (ou um raio perto do parque pode não
 aparecer); a regra exata de distância dos parques não é pública.
 
-Como rodar (mesma pasta; depois do limpar_paradas.py):
-    python checar_clima.py
+Como rodar (a partir da raiz do projeto; depois do limpar_paradas.py):
+    python src/checar_clima.py
 
-Precisa do arquivo atracoes_ar_livre.csv na mesma pasta (quais atrações fecham
+Precisa do arquivo atracoes_ar_livre.csv na raiz do projeto (quais atrações fecham
 com raio; pode ser editado). Gera:
     dados/brutos/clima/metar_<inicio>_<fim>.csv   boletins brutos
     dados/tratados/paradas_clima.csv              paradas.csv + colunas de raio
@@ -74,7 +74,7 @@ ESTACOES = {
 
 URL_IEM = "https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py"
 
-PASTA = Path(__file__).parent
+PASTA = Path(__file__).resolve().parent.parent   # raiz do projeto (este script fica em src/)
 PASTA_CLIMA = PASTA / "dados" / "brutos" / "clima"
 PASTA_TRATADOS = PASTA / "dados" / "tratados"
 ARQUIVO_AR_LIVRE = PASTA / "atracoes_ar_livre.csv"
@@ -160,7 +160,7 @@ def main():
     if not (PASTA_TRATADOS / "paradas.csv").exists():
         sys.exit("ERRO: rode antes o limpar_paradas.py (falta dados/tratados/paradas.csv).")
     if not ARQUIVO_AR_LIVRE.exists():
-        sys.exit("ERRO: falta o arquivo atracoes_ar_livre.csv nesta pasta.")
+        sys.exit("ERRO: falta o arquivo atracoes_ar_livre.csv na raiz do projeto.")
     paradas = ler_csv(PASTA_TRATADOS / "paradas.csv")
     atracoes_dia = ler_csv(PASTA_TRATADOS / "atracoes_dia.csv")
     if "porte" not in paradas[0]:

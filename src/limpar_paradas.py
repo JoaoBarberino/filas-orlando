@@ -27,9 +27,9 @@ limpeza aprovadas em 04/11/2026 (seção 4.9 do projeto-filas-orlando.md):
   Medida principal: paradas de 10 min ou mais por 10 horas de operação da
   atração (minutos funcionando + parada, no horário normal).
 
-Como rodar (dentro da mesma pasta do baixar_historico.py):
+Como rodar (a partir da raiz do projeto, depois do src/baixar_historico.py):
     pip install tzdata      (só no Windows, uma vez)
-    python limpar_paradas.py
+    python src/limpar_paradas.py
 
 Gera, em dados/tratados/:
     paradas.csv        uma linha por parada (dentro do horário normal)
@@ -125,7 +125,7 @@ TEATROS_E_CINEMAS = {
 
 STATUS_CONHECIDOS = {"OPERATING", "DOWN", "CLOSED", "REFURBISHMENT"}
 
-PASTA = Path(__file__).parent
+PASTA = Path(__file__).resolve().parent.parent   # raiz do projeto (este script fica em src/)
 PASTA_HISTORICO = PASTA / "dados" / "brutos" / "historico"
 PASTA_HORARIOS = PASTA / "dados" / "brutos" / "horarios"
 PASTA_SAIDA = PASTA / "dados" / "tratados"
@@ -423,7 +423,7 @@ def main():
     for motivo, n in motivos.most_common():
         print(f"  {n:5d}  {motivo}")
     print(f"\nArquivos gravados em {PASTA_SAIDA}")
-    print("Próximo passo: python checar_clima.py (marca as paradas com raio por perto).")
+    print("Próximo passo: python src/checar_clima.py (marca as paradas com raio por perto).")
 
 
 if __name__ == "__main__":

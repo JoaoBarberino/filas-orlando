@@ -17,8 +17,8 @@ Por que o EPCOT: é o parque cuja posição muda e que passou nos testes do robu
 (3º em todos os cortes de porte, nas duas metades do mês e em 84% das reamostragens
 por dia). Quem é o 1º (Islands ou Epic) NÃO passou nos testes: por isso não vai em título.
 
-Como rodar (mesma pasta; depois do limpar_paradas.py e do checar_clima.py):
-    python carrossel_estreia.py
+Como rodar (a partir da raiz do projeto; depois do limpar_paradas.py e do checar_clima.py):
+    python src/carrossel_estreia.py
 
 Precisa da pasta "fontes_quinta" com (todas gratuitas, licença OFL):
     BricolageGrotesque-Bold.ttf, WorkSans-Regular.ttf, Jura-Medium.ttf
@@ -83,7 +83,7 @@ NOMES = {
 PORTES = {"todas": ("sem_fila", "menor", "grande"), "grandes": ("grande",)}
 TIPOS = [("sem_fila", "sem fila"), ("menor", "menores"), ("grande", "grandes")]
 
-PASTA = Path(__file__).parent
+PASTA = Path(__file__).resolve().parent.parent   # raiz do projeto (este script fica em src/)
 PASTA_TRATADOS = PASTA / "dados" / "tratados"
 PASTA_FONTES = PASTA / "fontes_quinta"
 PASTA_SAIDA = PASTA / "posts" / "01-composicao"      # imagens e PDF publicados

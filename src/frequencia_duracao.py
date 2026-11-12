@@ -1,9 +1,9 @@
 """
 Projeto "Filas em Orlando": frequência x duração das paradas (pilar 2, post 2).
 
-Como rodar (mesma pasta; depois do limpar_paradas.py e do checar_clima.py; NÃO rode o
+Como rodar (a partir da raiz do projeto; depois do limpar_paradas.py e do checar_clima.py; NÃO rode o
 limpar_paradas.py de novo antes, porque o porte é recalculado com os dias novos):
-    python frequencia_duracao.py
+    python src/frequencia_duracao.py
 Só lê os CSVs de dados/tratados; não grava nada. NÃO publicar sem revisão.
 
 Versão revisada (11/11/2026) depois de uma auditoria independente. Mudanças:
@@ -57,7 +57,7 @@ NOMES = {
     "animal-kingdom": "Animal Kingdom", "universal-studios-florida": "Universal Studios",
     "islands-of-adventure": "Islands of Adventure", "epic-universe": "Epic Universe",
 }
-PASTA = Path(__file__).parent / "dados" / "tratados"
+PASTA = Path(__file__).resolve().parent.parent / "dados" / "tratados"   # raiz do projeto (este script fica em src/)
 NAN = float("nan")
 
 
@@ -234,7 +234,7 @@ def checar_dados(atracoes_dia, paradas):
         fronteira = Counter((p["parque"], "grande" if p.get("porte") == "grande" else "outra")
                             for p in paradas if no_periodo(p) and p["conta_10min"] == "não"
                             and float(p["duracao_min"]) >= 10 and p["marca_clima"] != "raio")
-        print(f"  Paradas entre 9,95 e 10 min (contam no robustez.py, não no carrossel da estreia): "
+        print(f"  Paradas entre 9,95 e 10 min (entrariam pelo critério arredondado, mas não contam aqui): "
               f"{dict(fronteira) or 'nenhuma'}")
     if ad and "porte" in ad[0]:
         f2 = sorted({(l["parque"], l["atracao"]) for l in ad if l["porte"] != "grande"

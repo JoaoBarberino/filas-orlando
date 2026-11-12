@@ -59,15 +59,17 @@ São, portanto, dois problemas operacionais distintos: reduzir a frequência sig
 
 ## Organização do código
 
+Os scripts ficam em `src/` e são executados a partir da raiz do projeto.
+
 | Arquivo | Finalidade |
 |---|---|
-| `baixar_historico.py` | Coleta de histórico e horários via ThemeParks.wiki |
-| `limpar_paradas.py` | Tratamento dos eventos e criação dos indicadores |
-| `checar_clima.py` | Cruzamento com boletins METAR de trovoadas |
-| `robustez.py` | Testes de sensibilidade e reamostragem dos rankings |
-| `frequencia_duracao.py` | Frequência, duração, disponibilidade e tempo total parado |
-| `carrossel_estreia.py` | Gráficos e PDF da primeira publicação |
-| `carrossel_frequencia_duracao.py` | Gráficos e PDF da segunda publicação |
+| `src/baixar_historico.py` | Coleta de histórico e horários via ThemeParks.wiki |
+| `src/limpar_paradas.py` | Tratamento dos eventos e criação dos indicadores |
+| `src/checar_clima.py` | Cruzamento com boletins METAR de trovoadas |
+| `src/robustez.py` | Testes de sensibilidade e reamostragem dos rankings |
+| `src/frequencia_duracao.py` | Frequência, duração, disponibilidade e tempo total parado |
+| `src/carrossel_estreia.py` | Gráficos e PDF da primeira publicação |
+| `src/carrossel_frequencia_duracao.py` | Gráficos e PDF da segunda publicação |
 | `atracoes_ar_livre.csv` | Classificação de atrações suscetíveis a paradas por raio |
 | `fontes_quinta/` | Fontes utilizadas nos gráficos, acompanhadas das licenças OFL |
 | `posts/` | Imagens e PDF de cada publicação, uma pasta por estudo |
@@ -89,13 +91,13 @@ Requisitos: Python 3.10+ e acesso à internet para as etapas de coleta.
 3. Na ordem, execute:
 
    ```bash
-   python baixar_historico.py
-   python limpar_paradas.py
-   python checar_clima.py
-   python robustez.py
-   python carrossel_estreia.py
-   python frequencia_duracao.py
-   python carrossel_frequencia_duracao.py
+   python src/baixar_historico.py
+   python src/limpar_paradas.py
+   python src/checar_clima.py
+   python src/robustez.py
+   python src/carrossel_estreia.py
+   python src/frequencia_duracao.py
+   python src/carrossel_frequencia_duracao.py
    ```
 
 A pasta `dados/` é gerada localmente e **não faz parte do repositório público**. Os gráficos são gerados a partir dos dados obtidos e tratados no ambiente do usuário. Como o histórico da API gratuita tem janela móvel, o intervalo original do primeiro estudo pode não estar disponível para novas contas.

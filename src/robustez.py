@@ -18,8 +18,8 @@ usar as colunas conta_10min e porte. Antes o script lia duracao_min e fila_media
 arredondadas, e contava algumas paradas de 9,95 a 9,99 min como 10 min. Por isso dava 0,78 no
 Epic Universe, contra os 0,77 do carrossel da estreia, que sempre esteve certo.
 
-Como rodar (mesma pasta; depois do limpar_paradas.py e do checar_clima.py):
-    python robustez.py
+Como rodar (a partir da raiz do projeto; depois do limpar_paradas.py e do checar_clima.py):
+    python src/robustez.py
 Leva alguns segundos. Só lê os CSVs de dados/tratados; não grava nada.
 """
 
@@ -29,7 +29,7 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
-PASTA = Path(__file__).parent / "dados" / "tratados"
+PASTA = Path(__file__).resolve().parent.parent / "dados" / "tratados"   # raiz do projeto (este script fica em src/)
 REPETICOES = 2000
 SEMENTE = 12   # para o resultado sair igual toda vez
 NOMES = {

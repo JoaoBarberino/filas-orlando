@@ -6,11 +6,11 @@ status das atrações e preço da fila paga) dos 7 parques de Orlando, para todo
 os dias que a sua chave alcança (30 dias na conta gratuita), mais o horário de
 funcionamento de cada parque.
 
-Como rodar (dentro desta pasta):
+Como rodar (a partir da raiz do projeto):
     pip install requests
-    python baixar_historico.py
+    python src/baixar_historico.py
 
-A chave da API fica no arquivo .env desta pasta (veja .env.exemplo).
+A chave da API fica no arquivo .env na raiz do projeto (veja .env.exemplo).
 O script pode ser rodado de novo quantas vezes quiser: ele pula os dias já
 baixados e só busca o que falta.
 
@@ -29,7 +29,7 @@ from pathlib import Path
 
 import requests
 
-PASTA = Path(__file__).parent
+PASTA = Path(__file__).resolve().parent.parent   # raiz do projeto (este script fica em src/)
 BASE = os.environ.get("THEMEPARKS_BASE_URL", "https://api.themeparks.wiki/v1")
 PAUSA_ENTRE_CHAMADAS = 1.0  # segundos; educado com a API e bem abaixo dos limites
 
@@ -51,7 +51,7 @@ PASTA_HORARIOS = PASTA / "dados" / "brutos" / "horarios"
 # Chave e sessão
 # ---------------------------------------------------------------------------
 def ler_chave():
-    """Lê THEMEPARKS_API_KEY do ambiente ou do arquivo .env desta pasta."""
+    """Lê THEMEPARKS_API_KEY do ambiente ou do arquivo .env na raiz do projeto."""
     chave = os.environ.get("THEMEPARKS_API_KEY", "").strip()
     arquivo = PASTA / ".env"
     if not chave and arquivo.exists():
@@ -62,7 +62,7 @@ def ler_chave():
     if not chave or chave == "cole_sua_chave_aqui":
         sys.exit(
             "ERRO: chave não encontrada.\n"
-            "Crie um arquivo chamado .env nesta pasta com a linha:\n"
+            "Crie um arquivo chamado .env na raiz do projeto com a linha:\n"
             "THEMEPARKS_API_KEY=sua_chave"
         )
     return chave
