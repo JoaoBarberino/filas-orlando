@@ -86,6 +86,7 @@ TIPOS = [("sem_fila", "sem fila"), ("menor", "menores"), ("grande", "grandes")]
 PASTA = Path(__file__).parent
 PASTA_TRATADOS = PASTA / "dados" / "tratados"
 PASTA_FONTES = PASTA / "fontes_quinta"
+PASTA_SAIDA = PASTA / "posts" / "01-composicao"      # imagens e PDF publicados
 
 
 # ---------------------------------------------------------------------------
@@ -316,12 +317,13 @@ def main():
     figuras = [("carrossel_1_capa.png", capa(f, tab)),
                ("carrossel_2_o_que_muda.png", ranking(f, tab)),
                ("carrossel_3_por_que.png", por_que(f, tab))]
-    with PdfPages(PASTA / "carrossel_estreia.pdf") as pdf:
+    PASTA_SAIDA.mkdir(parents=True, exist_ok=True)
+    with PdfPages(PASTA_SAIDA / "carrossel_estreia.pdf") as pdf:
         for nome, fig in figuras:
-            fig.savefig(PASTA / nome, dpi=100, facecolor=PAPEL)
+            fig.savefig(PASTA_SAIDA / nome, dpi=100, facecolor=PAPEL)
             pdf.savefig(fig, facecolor=PAPEL)
             plt.close(fig)
-    print(f"\nGravados em {PASTA}: {', '.join(n for n, _ in figuras)} e carrossel_estreia.pdf")
+    print(f"\nGravados em {PASTA_SAIDA}: {', '.join(n for n, _ in figuras)} e carrossel_estreia.pdf")
 
 
 if __name__ == "__main__":

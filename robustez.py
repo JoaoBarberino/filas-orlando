@@ -13,6 +13,11 @@ Testes:
   4. Outros cortes: "grande" a partir de 15, 20, 25 e 30 min; parada mínima de 5, 10 e 15 min.
   5. Primeira metade x segunda metade do período.
 
+Correção de 11/11/2026 (auditoria do post 2): o corte de 10 min e a régua "grandes" passaram a
+usar as colunas conta_10min e porte. Antes o script lia duracao_min e fila_media_min, que são
+arredondadas, e contava algumas paradas de 9,95 a 9,99 min como 10 min. Por isso dava 0,78 no
+Epic Universe, contra os 0,77 do carrossel da estreia, que sempre esteve certo.
+
 Como rodar (mesma pasta; depois do limpar_paradas.py e do checar_clima.py):
     python robustez.py
 Leva alguns segundos. Só lê os CSVs de dados/tratados; não grava nada.
@@ -43,17 +48,28 @@ def ler(nome):
 
 
 def montar(atracoes_dia, paradas, corte_grande=20, minimo=10):
-    """Lista de atração-dias: (parque, data, atracao, horas de operação, paradas, é grande, tem fila)."""
+    """Lista de atração-dias: (parque, data, atracao, horas de operação, paradas, é grande, tem fila).
+
+    No corte padrão (parada de 10 min, fila de 20 min) valem as colunas que o limpar_paradas.py
+    já calculou com o valor exato: conta_10min e porte. As colunas duracao_min e fila_media_min
+    foram gravadas arredondadas a 0,1, então uma parada de 9,97 min vira "10.0" e entraria por
+    engano. Nos outros cortes não existe coluna pronta, e aí o valor arredondado é o que há.
+    """
+    if minimo == 10:
+        conta = lambda p: p["conta_10min"] == "sim"
+    else:
+        conta = lambda p: float(p["duracao_min"]) >= minimo
     n = Counter((p["parque"], p["data"], p["atracao"]) for p in paradas
-                if float(p["duracao_min"]) >= minimo and p["marca_clima"] != "raio")
+                if conta(p) and p["marca_clima"] != "raio")
     linhas = []
     for l in atracoes_dia:
         horas = (float(l["min_funcionando"]) + float(l["min_parada"])) / 60
         fila = float(l["fila_media_min"]) if l["fila_media_min"] else 0.0
+        grande = l["porte"] == "grande" if corte_grande == 20 else fila >= corte_grande
         if horas <= 0:
             continue
         linhas.append((l["parque"], l["data"], l["atracao"], horas, n[(l["parque"], l["data"], l["atracao"])],
-                       fila >= corte_grande, fila >= 1))
+                       grande, fila >= 1))
     return linhas
 
 
